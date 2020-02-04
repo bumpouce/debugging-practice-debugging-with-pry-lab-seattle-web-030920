@@ -11,7 +11,7 @@ end
 
 def turtle_traits(turtles)
   turtles.map do |turtle|
-    if turtle[:traits].class = "String"
+    if turtle[:traits].class == "String"
       turtle[:traits] = [turtle[:traits]]
     end
     turtle[:traits].each do |trait|
