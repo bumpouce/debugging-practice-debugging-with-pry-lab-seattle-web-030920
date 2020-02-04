@@ -11,6 +11,8 @@ end
 
 def turtle_traits(turtles)
   turtles.map do |turtle|
+    if turtle[:traits].class = "String"
+      turtle[:traits] = [turtle[:traits]]
     turtle[:traits].each do |trait|
       trait
       binding.pry
